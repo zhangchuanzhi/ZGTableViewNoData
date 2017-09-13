@@ -22,7 +22,7 @@
     [tableView reloadData];
     if (!ifNeed)
     {
-        tableView.tableFooterView=[self getTableFootView:rect str:FE_Exam_Exercise_Content];
+        tableView.tableFooterView=[self getTableFootView:rect str:@"timg"];
     }
     else
     {

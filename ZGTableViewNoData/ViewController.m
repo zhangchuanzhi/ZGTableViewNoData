@@ -7,22 +7,29 @@
 //
 
 #import "ViewController.h"
-
+#import "UITableView+ZGNoData.h"
 @interface ViewController ()
-
+@property(nonatomic,strong)UITableView*tableview;
+@property(nonatomic,strong)NSMutableArray*mutDataArr;
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    _tableview=[[UITableView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    [self.view addSubview:_tableview];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.tableview tableReloadCtrl:self.tableview rect:self.tableview.bounds ifNeedFoot:self.mutDataArr.count?YES:NO];
+    });
 }
 
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
 

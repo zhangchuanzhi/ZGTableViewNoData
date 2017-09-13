@@ -29,6 +29,7 @@
 		23F66C151F68E46F00A46F61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23F66C131F68E46F00A46F61 /* Main.storyboard */; };
 		23F66C171F68E46F00A46F61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23F66C161F68E46F00A46F61 /* Assets.xcassets */; };
 		23F66C1A1F68E46F00A46F61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23F66C181F68E46F00A46F61 /* LaunchScreen.storyboard */; };
+		23F66C231F68FD6000A46F61 /* UITableView+ZGNoData.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F66C221F68FD6000A46F61 /* UITableView+ZGNoData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,9 +63,11 @@
 		23F66C061F68E46F00A46F61 /* ZGMineController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGMineController.h; sourceTree = "<group>"; };
 		23F66C071F68E46F00A46F61 /* ZGMineController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGMineController.m; sourceTree = "<group>"; };
 		23F66C141F68E46F00A46F61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		23F66C161F68E46F00A46F61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23F66C161F68E46F00A46F61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		23F66C191F68E46F00A46F61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		23F66C1B1F68E46F00A46F61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23F66C1B1F68E46F00A46F61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		23F66C211F68FD6000A46F61 /* UITableView+ZGNoData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+ZGNoData.h"; sourceTree = "<group>"; };
+		23F66C221F68FD6000A46F61 /* UITableView+ZGNoData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+ZGNoData.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,14 +116,6 @@
 		23F66BD61F68E46F00A46F61 /* ZGTableViewNoData */ = {
 			isa = PBXGroup;
 			children = (
-				23F66BDA1F68E46F00A46F61 /* AppDelegate.h */,
-				23F66BDB1F68E46F00A46F61 /* AppDelegate.m */,
-				23F66BDD1F68E46F00A46F61 /* ViewController.h */,
-				23F66BDE1F68E46F00A46F61 /* ViewController.m */,
-				23F66C131F68E46F00A46F61 /* Main.storyboard */,
-				23F66C161F68E46F00A46F61 /* Assets.xcassets */,
-				23F66C181F68E46F00A46F61 /* LaunchScreen.storyboard */,
-				23F66C1B1F68E46F00A46F61 /* Info.plist */,
 				23F66C111F68E46F00A46F61 /* Utils */,
 				23F66C0F1F68E46F00A46F61 /* Resource */,
 				23F66C0D1F68E46F00A46F61 /* ThridParty */,
@@ -137,6 +132,8 @@
 		23F66BD71F68E46F00A46F61 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				23F66C131F68E46F00A46F61 /* Main.storyboard */,
+				23F66C181F68E46F00A46F61 /* LaunchScreen.storyboard */,
 				23F66BD81F68E46F00A46F61 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -170,6 +167,10 @@
 		23F66BF11F68E46F00A46F61 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
+				23F66BDA1F68E46F00A46F61 /* AppDelegate.h */,
+				23F66BDB1F68E46F00A46F61 /* AppDelegate.m */,
+				23F66BDD1F68E46F00A46F61 /* ViewController.h */,
+				23F66BDE1F68E46F00A46F61 /* ViewController.m */,
 				23F66BF21F68E46F00A46F61 /* AppDelegate+AppService.h */,
 				23F66BF31F68E46F00A46F61 /* AppDelegate+AppService.m */,
 			);
@@ -305,6 +306,8 @@
 		23F66C0F1F68E46F00A46F61 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				23F66C161F68E46F00A46F61 /* Assets.xcassets */,
+				23F66C1B1F68E46F00A46F61 /* Info.plist */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -312,6 +315,8 @@
 		23F66C111F68E46F00A46F61 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				23F66C211F68FD6000A46F61 /* UITableView+ZGNoData.h */,
+				23F66C221F68FD6000A46F61 /* UITableView+ZGNoData.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -400,6 +405,7 @@
 				23F66BF01F68E46F00A46F61 /* ZGTabBarController.m in Sources */,
 				23F66BEA1F68E46F00A46F61 /* ZGBaseController.m in Sources */,
 				23F66BDC1F68E46F00A46F61 /* AppDelegate.m in Sources */,
+				23F66C231F68FD6000A46F61 /* UITableView+ZGNoData.m in Sources */,
 				23F66BD91F68E46F00A46F61 /* main.m in Sources */,
 				23F66BF41F68E46F00A46F61 /* AppDelegate+AppService.m in Sources */,
 			);
